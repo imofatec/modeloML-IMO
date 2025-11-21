@@ -1,0 +1,25 @@
+[project]
+name = "ml-api"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "daniel",email = "daniel.cordeiro2@fatec.sp.gov.br"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard] (>=0.121.3,<0.122.0)",
+    "joblib (>=1.5.2,<2.0.0)",
+    "scikit-learn (==1.6.1)",
+    "pytest (>=9.0.1,<10.0.0)"
+]
+
+[tool.poetry.scripts]
+dev = "ml_api.app.runserver:main"
+
+[tool.poetry]
+packages = [{ include = "ml_api", from = "src" }]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
