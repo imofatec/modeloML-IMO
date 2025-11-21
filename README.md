@@ -1,0 +1,130 @@
+# ML API
+
+Uma API que disponibiliza um modelo de Regressão já treinado, fornecendo um valor contínuo referente à previsão de um curso ser concluído.
+
+---
+
+## Instalação e Configuração
+
+### Windows
+
+Clone o repositório:
+```bash
+git clone https://github.com/imofatec/modeloML-IMO.git
+```
+
+Acesse a pasta do projeto:
+```bash
+cd modeloML-IMO
+cd mlp_api
+```
+
+Instale o Poetry:
+```bash
+pip install poetry
+```
+
+Crie e ative uma virtual environment com Poetry:
+```bash
+poetry env use python
+poetry shell
+```
+
+Ou, se preferir usar venv nativo do Python:
+```bash
+python -m venv .venv
+.\venv\Scripts\activate
+```
+
+Instale as dependências:
+```bash
+poetry install
+```
+
+Execute a API em desenvolvimento:
+```bash
+poetry run dev
+```
+
+---
+
+### Linux/Mac
+
+Clone o repositório:
+```bash
+git clone https://github.com/imofatec/modeloML-IMO.git
+```
+
+Acesse a pasta do projeto:
+```bash
+cd modeloML-IMO
+cd mlp_api
+```
+
+Instale o Poetry:
+```bash
+pip install poetry
+```
+
+Crie e ative uma virtual environment com Poetry:
+```bash
+poetry env use python
+poetry shell
+```
+
+Ou, se preferir usar venv nativo do Python:
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+Instale as dependências:
+```bash
+poetry install
+```
+
+Execute a API em desenvolvimento:
+```bash
+poetry run dev
+```
+
+---
+
+## Testando a API
+
+### Via Swagger
+
+Acesse:
+```
+http://localhost:8000/docs
+```
+
+### Fazer uma Predição
+
+Acesse o endpoint:
+```
+http://localhost:8000/predict
+```
+
+Envie um request POST com o seguinte JSON:
+
+**Request:**
+```json
+{
+    "course_level": "BEGINNER",
+    "lessons_count": 1,
+    "course_categories": "DATA",
+    "user_academic_level": "NONE",
+    "user_level": "BEGINNER",
+    "user_available_time": "ONE_TO_TWO_HOURS",
+    "user_interest_categories1": "DEV_WEB",
+    "user_interest_categories2": "CLOUD",
+    "lessons_watched": 1
+}
+```
+
+**Response:**
+```json
+{
+  "predict": 0.67
+}
