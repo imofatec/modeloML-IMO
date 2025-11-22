@@ -128,3 +128,20 @@ Envie um request POST com o seguinte JSON:
 {
   "predict": 0.67
 }
+```
+## Setup Front
+### Envs
+Crie um arquivo em `modeloML-IMO/frontend` chamado `.env` e adicione neles as variáveis de ambiente necessárias
+> Necessário para conexão com backend
+
+Exemplo:
+```
+VITE_BASE_URL=http://127.0.0.1:8000
+```
+### Run
+> Inicie o projeto e acesse http://localhost:5173
+```
+cd frontend
+npm install 
+npm run dev
+```
