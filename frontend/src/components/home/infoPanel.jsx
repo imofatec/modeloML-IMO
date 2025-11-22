@@ -1,8 +1,10 @@
+import LogoImo from '../../assets/imoLogoF2.svg';
+
 export default function InfoPanel() {
     return (
         <>
             <div className='flex flex-col justify-start items-start w-3/5 gap-20'>
-                <img src="\src\assets\imoLogoF2.svg" alt="Logo da IMO" width={250} height={250} className="pt-2" />
+                <img src={LogoImo} alt="Logo da IMO" width={250} height={250} className="pt-2" />
                 <h1 className="text-3xl font-bold mb-4">Modelo de ML - IMO</h1>
             </div>
 
