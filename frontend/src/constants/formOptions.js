@@ -6,8 +6,8 @@ export const course_level = [
 
 export const course_categories = [
     { value: 'AI', label: 'Inteligencia Artificial' },
-    { value: 'CLOUD', label: 'Programação em nuvem' },
-    { value: 'DATA', label: 'Mineiração de dados' },
+    { value: 'CLOUD', label: 'Computação em nuvem' },
+    { value: 'DATA', label: 'Mineração de dados' },
     { value: 'DEV_MOBILE', label: 'Programação mobile' },
     { value: 'DEV_WEB', label: 'Programação web ' },
     { value: 'SECURITY', label: 'Segurança da informação' },
@@ -16,7 +16,7 @@ export const course_categories = [
 export const user_academic_level = [
     { value: 'NONE', label: 'Nenhum' },
     { value: 'TECHNICAL', label: 'Tecnico' },
-    { value: 'ASSOCIATE', label: 'Associado' },
+    { value: 'ASSOCIATE', label: 'Tecnólogo' },
     { value: 'BACHELOR', label: 'Bacharelado' },
     { value: 'LICENTIATE', label: 'licenciatura' },
     { value: 'MBA', label: 'MBA' },
@@ -40,8 +40,8 @@ export const user_available_time = [
 
 export const user_interest_categories = [
     { value: 'AI', label: 'Inteligencia Artificial' },
-    { value: 'CLOUD', label: 'Programação em nuvem' },
-    { value: 'DATA', label: 'Mineiração de dados' },
+    { value: 'CLOUD', label: 'Computação em nuvem' },
+    { value: 'DATA', label: 'Mineração de dados' },
     { value: 'DEV_MOBILE', label: 'Programação mobile' },
     { value: 'DEV_WEB', label: 'Programação web ' },
     { value: 'SECURITY', label: 'Segurança da informação' },
