@@ -41,7 +41,7 @@ export default function PredictionForm({ setPredictionResult }) {
     setPredictionResult(response.data.predict * 100);
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     for (let key in formData) {
       if (formData[key] === '') {
@@ -56,7 +56,7 @@ export default function PredictionForm({ setPredictionResult }) {
     }
     setLoading(true);
     setErrorMessage('');
-    fetchPrediction(formData);
+    await fetchPrediction(formData);
     setLoading(false);
   }
   return (
