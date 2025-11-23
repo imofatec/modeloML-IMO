@@ -4,7 +4,28 @@ Uma API que disponibiliza um modelo de Regressão já treinado, fornecendo um va
 
 ---
 
-## Instalação e Configuração
+
+### Populate Database
+
+Geração de dados a partir da API IMO para serem trabalhados
+
+🔗 https://github.com/imofatec/imo/blob/feature/PopulateDB/backend/src/main/java/com/imo/backend/config/mongodb/populate/Populate.java
+
+### ETL (Extração, Transformação e Carga)
+
+Acessa a base de dados gerada pelo Populate Database e realiza o beneficiamento dos dados
+
+🔗 https://github.com/imofatec/etl
+
+### Notebook
+
+Mecanismo utilizado para treinar o modelo de regressão
+
+🔗 https://colab.research.google.com/drive/19p-ufk-Zx7fs0KHsadd8O9nlzmhtjHyt?usp=sharing
+
+
+### Instalação e Configuração
+
 
 ### Windows
 
